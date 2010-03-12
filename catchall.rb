@@ -30,6 +30,8 @@ get '/*' do
     @view = view_for_domain(splat)
   end
   
+  @domain = request.env["HTTP_HOST"].sub(/^(?:www)\./, '')
+  
   # ensure view exists, and load
   @view = DefaultDomain unless view_exists?(@view)
   haml @view.to_sym
