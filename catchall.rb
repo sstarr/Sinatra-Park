@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 
-Domains = %w{linkdeleted example}
+Domains = %w{linkdeleted.com example}
 DefaultDomain = 'default'
 
 # what domain does the host contain?

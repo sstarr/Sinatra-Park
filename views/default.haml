@@ -6,4 +6,4 @@
     %p
       Hi,
       %a{:href => "http://simonstarr.com/"} Simon
-      registered this domain but hasn't done anything with it yet.
+      registered #{request.env["HTTP_HOST"]} but hasn't done anything with it yet.
