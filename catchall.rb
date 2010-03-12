@@ -2,8 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'erb'
 
-Domains = %w{emmawhiting.co.uk}
-
 def view_exists?(view)
   File.exists?(Dir.pwd + "/views/#{view}.erb")
 end
